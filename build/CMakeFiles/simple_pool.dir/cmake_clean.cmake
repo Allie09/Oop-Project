@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "/Users/aliimran/Downloads/simple_pool-master-2/simple_pool"
+  "/Users/aliimran/Downloads/simple_pool-master-2/simple_pool.pdb"
+  "CMakeFiles/simple_pool.dir/src/Unit.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/Unit.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/audioobserver.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/audioobserver.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/ball.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/ball.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/collisionobserver.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/collisionobserver.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/cue.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/cue.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/exception.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/exception.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/font.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/font.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/game.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/game.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/gamestate.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/gamestate.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/intro.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/intro.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/main.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/main.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/mainwindow.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/mainwindow.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/music.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/music.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/observer.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/observer.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/rect.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/rect.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/table.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/table.cpp.o.d"
+  "CMakeFiles/simple_pool.dir/src/texture.cpp.o"
+  "CMakeFiles/simple_pool.dir/src/texture.cpp.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/simple_pool.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -26,7 +26,7 @@ public:
     void setVel(double sx, double sy);
     virtual void   move() override;
     virtual void render() override;
-    bool is_moving() const;
+    bool is_moving() const noexcept;
 };
 
 #endif // BALL_H

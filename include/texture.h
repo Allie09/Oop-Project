@@ -17,8 +17,8 @@ public:
     bool loadFromRenderedText(const std::string& textureText, Font& f, SDL_Color textColor );
     void free();
     void render( int x, int y, SDL_Rect* clip = nullptr, double angle = 0.0, SDL_Point* center = nullptr, SDL_RendererFlip flip = SDL_FLIP_NONE );
-    double  getWidth() const {return mWidth; }
-    double getHeight() const {return mHeight;}
+    double  getWidth() const noexcept {return mWidth; }
+    double getHeight() const noexcept {return mHeight;}
 
 private:
     SDL_Texture* mTexture;

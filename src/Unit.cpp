@@ -6,7 +6,7 @@ Unit::Unit() : observers_{}
 {
 }
 
-Unit::~Unit()
+Unit::~Unit() noexcept
 {
     for (Observer* ob: observers_)
         ob->unregisterSub(this);

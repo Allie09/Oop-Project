@@ -18,11 +18,11 @@ public:
     void setDeg(double angle);
     void setX(double x);
 
-    double getHeight() const {return t.getHeight();}
-    double getWidth() const {return t.getWidth();}
-    double getAngle() const {return degrees;}
-    double getX() const {return posX;}
-    double getY() const {return posY;}
+    double getHeight() const noexcept {return t.getHeight();}
+    double  getWidth() const noexcept {return t.getWidth();}
+    double  getAngle() const noexcept {return degrees;}
+    double      getX() const noexcept {return posX;}
+    double      getY() const noexcept {return posY;}
 };
 
 #endif // CUE_H
