@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/Users/aliimran/Downloads/simple_pool-master-2/8-BALL-POOL"
-  "/Users/aliimran/Downloads/simple_pool-master-2/8-BALL-POOL.pdb"
+  "/Users/aliimran/downloads/Oop-Project-main/8-BALL-POOL"
+  "/Users/aliimran/downloads/Oop-Project-main/8-BALL-POOL.pdb"
   "CMakeFiles/8-BALL-POOL.dir/src/Unit.cpp.o"
   "CMakeFiles/8-BALL-POOL.dir/src/Unit.cpp.o.d"
   "CMakeFiles/8-BALL-POOL.dir/src/audioobserver.cpp.o"

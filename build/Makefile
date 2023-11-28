@@ -57,10 +57,10 @@ RM = /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-pack
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/aliimran/Downloads/simple_pool-master-2
+CMAKE_SOURCE_DIR = /Users/aliimran/downloads/Oop-Project-main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/aliimran/Downloads/simple_pool-master-2/build
+CMAKE_BINARY_DIR = /Users/aliimran/downloads/Oop-Project-main/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliimran/Downloads/simple_pool-master-2/build/CMakeFiles /Users/aliimran/Downloads/simple_pool-master-2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliimran/downloads/Oop-Project-main/build/CMakeFiles /Users/aliimran/downloads/Oop-Project-main/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliimran/Downloads/simple_pool-master-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliimran/downloads/Oop-Project-main/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
