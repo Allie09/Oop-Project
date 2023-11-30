@@ -33,6 +33,7 @@ set(SOURCES
     src/collisionobserver.cpp
     src/audioobserver.cpp
     src/cue.cpp
+    src/score.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})

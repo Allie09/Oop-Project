@@ -53,7 +53,6 @@ void CollisionObserver::checkCollisions(Ball* b)
             {
                 if (collided(b, b2))
                 {
-                    // std::cout << "2 balls collided!" << std::endl;
                     fix(b, b2);
 
                     if (b2->id == 999) // Side of the pocket

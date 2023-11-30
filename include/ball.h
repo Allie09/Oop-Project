@@ -27,6 +27,7 @@ public:
     virtual void   move() override;
     virtual void render() override;
     bool is_moving() const noexcept;
+    bool is_Stripes(){return (this->id>0 &&this->id<8);}
 };
 
 #endif // BALL_H

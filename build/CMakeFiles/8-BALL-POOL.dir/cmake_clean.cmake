@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/Users/aliimran/downloads/Oop-Project-main/8-BALL-POOL"
-  "/Users/aliimran/downloads/Oop-Project-main/8-BALL-POOL.pdb"
+  "/Users/aliimran/Downloads/Oop-Project-main/8-BALL-POOL"
+  "/Users/aliimran/Downloads/Oop-Project-main/8-BALL-POOL.pdb"
   "CMakeFiles/8-BALL-POOL.dir/src/Unit.cpp.o"
   "CMakeFiles/8-BALL-POOL.dir/src/Unit.cpp.o.d"
   "CMakeFiles/8-BALL-POOL.dir/src/audioobserver.cpp.o"
@@ -31,6 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/8-BALL-POOL.dir/src/observer.cpp.o.d"
   "CMakeFiles/8-BALL-POOL.dir/src/rect.cpp.o"
   "CMakeFiles/8-BALL-POOL.dir/src/rect.cpp.o.d"
+  "CMakeFiles/8-BALL-POOL.dir/src/score.cpp.o"
+  "CMakeFiles/8-BALL-POOL.dir/src/score.cpp.o.d"
   "CMakeFiles/8-BALL-POOL.dir/src/table.cpp.o"
   "CMakeFiles/8-BALL-POOL.dir/src/table.cpp.o.d"
   "CMakeFiles/8-BALL-POOL.dir/src/texture.cpp.o"

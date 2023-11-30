@@ -1,4 +1,4 @@
-# Install script for directory: /Users/aliimran/downloads/Oop-Project-main
+# Install script for directory: /Users/aliimran/Downloads/Oop-Project-main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/aliimran/downloads/Oop-Project-main/8-BALL-POOL")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/aliimran/Downloads/Oop-Project-main/8-BALL-POOL")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/8-BALL-POOL" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/8-BALL-POOL")
     execute_process(COMMAND /usr/bin/install_name_tool
@@ -51,7 +51,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin/pool_assets/" TYPE DIRECTORY FILES "/Users/aliimran/downloads/Oop-Project-main/pool_assets/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin/pool_assets/" TYPE DIRECTORY FILES "/Users/aliimran/Downloads/Oop-Project-main/pool_assets/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -62,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/aliimran/downloads/Oop-Project-main/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/aliimran/Downloads/Oop-Project-main/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

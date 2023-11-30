@@ -6,6 +6,7 @@
 #include "audioobserver.h"
 #include "ball.h"
 #include "cue.h"
+#include "score.h"
 
 #include <vector>
 #include <utility>
@@ -14,9 +15,13 @@ extern const double PI;
 
 class Game : public GameState {
     Texture background;
+    Texture scoreBoard;
+    Texture score;
+    Font f3;
     CollisionObserver collobserver;
     AudioObserver audio;
     Table tab;
+    Score s {};
     Ball balls[15] {};
     Ball cueball {};
     Cue cue {};

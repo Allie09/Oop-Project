@@ -57,10 +57,10 @@ RM = /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-pack
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/aliimran/downloads/Oop-Project-main
+CMAKE_SOURCE_DIR = /Users/aliimran/Downloads/Oop-Project-main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/aliimran/downloads/Oop-Project-main/build
+CMAKE_BINARY_DIR = /Users/aliimran/Downloads/Oop-Project-main/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliimran/downloads/Oop-Project-main/build/CMakeFiles /Users/aliimran/downloads/Oop-Project-main/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliimran/Downloads/Oop-Project-main/build/CMakeFiles /Users/aliimran/Downloads/Oop-Project-main/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliimran/downloads/Oop-Project-main/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aliimran/Downloads/Oop-Project-main/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -534,6 +534,30 @@ src/rect.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/8-BALL-POOL.dir/build.make CMakeFiles/8-BALL-POOL.dir/src/rect.cpp.s
 .PHONY : src/rect.cpp.s
 
+src/score.o: src/score.cpp.o
+.PHONY : src/score.o
+
+# target to build an object file
+src/score.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/8-BALL-POOL.dir/build.make CMakeFiles/8-BALL-POOL.dir/src/score.cpp.o
+.PHONY : src/score.cpp.o
+
+src/score.i: src/score.cpp.i
+.PHONY : src/score.i
+
+# target to preprocess a source file
+src/score.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/8-BALL-POOL.dir/build.make CMakeFiles/8-BALL-POOL.dir/src/score.cpp.i
+.PHONY : src/score.cpp.i
+
+src/score.s: src/score.cpp.s
+.PHONY : src/score.s
+
+# target to generate assembly for a file
+src/score.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/8-BALL-POOL.dir/build.make CMakeFiles/8-BALL-POOL.dir/src/score.cpp.s
+.PHONY : src/score.cpp.s
+
 src/table.o: src/table.cpp.o
 .PHONY : src/table.o
 
@@ -640,6 +664,9 @@ help:
 	@echo "... src/rect.o"
 	@echo "... src/rect.i"
 	@echo "... src/rect.s"
+	@echo "... src/score.o"
+	@echo "... src/score.i"
+	@echo "... src/score.s"
 	@echo "... src/table.o"
 	@echo "... src/table.i"
 	@echo "... src/table.s"

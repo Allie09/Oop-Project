@@ -51,7 +51,7 @@ void Ball::move()
         movData.speed_y *= 0.995;
 
         // Check for complete stop
-        if (std::abs(movData.speed_x) < 0.08 && std::abs(movData.speed_y) < 0.08)
+        if (std::abs(movData.speed_x) < 0.08 && std::abs(movData.speed_y) < 0.1)
         {
             movData.speed_x = 0.0;
             movData.speed_y = 0.0;

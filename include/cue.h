@@ -5,9 +5,11 @@
 
 class Cue {
     Texture t;
+    Texture t_helper;
     double posX, posY;
     double degrees;
     SDL_Point center;
+    SDL_Point center_helper;
 
 public:
     Cue();

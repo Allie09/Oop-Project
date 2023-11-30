@@ -1,3 +1,4 @@
+#include <iostream>
 #include "game.h"
 #include "mainwindow.h"
 
@@ -12,7 +13,11 @@ const double PI = std::atan(1) * 4;
 Game::Game()
     : background{},collobserver{}, audio{}, tab{&collobserver}
 {
+    f3.loadFromFile("./pool_assets/Debrosee-ALPnL.ttf", 30);
+    score.loadFromRenderedText("hello", f3 ,SDL_Color{0xFF,0,0,0xFF} );
     background.loadFromFile("./pool_assets/pool_intro2.jpg");
+    scoreBoard.loadFromFile("./pool_assets/scoreBoard.png");
+    
     create_balls();
     create_cue_ball();
 }
@@ -63,8 +68,10 @@ void Game::logic()
 void Game::render()
 {
     mainwindow->clear();
-
+    // score.render(300,50);
     background.render(0, 0);
+    // scoreBoard.render(300,15);
+    
     tab.render();
 
     for (auto& b: balls)
@@ -166,6 +173,8 @@ void Game::create_balls()
     std::swap(balls[4].posData, balls[8].posData);
 }
 
+
+
 void Game::create_cue_ball()
 {
     // Create and place the cue ball
@@ -182,13 +191,30 @@ void Game::create_cue_ball()
 
 void Game::check_pocket(Ball& b)
 {
+    static double posX =30; 
+    static double posXS = 570;
+    double posY = 50;
     if (tab.is_pocketed(b)) // hit the pocket
     {
         b.notify(Event::UNIT_POCKET_COLLIDED);
         b.removeObserver(&collobserver);
         b.is_movable = false;
-        b.is_visible = false;
-
+        // b.is_visible = false;
+        if (b.id!=0){
+            switch(b.is_Stripes()){
+                case true : 
+                    b.setPos(posX,posY);
+                    b.render();
+                    posX += b.posData.radius * 2.5;
+                    break;
+                case false :
+                    b.setPos(posXS,posY);
+                    b.render();
+                    posXS -= b.posData.radius * 2.5;
+                    break;
+            }
+            
+        }
         pockets.push_back(b.id);
     }
 }
@@ -249,9 +275,21 @@ void Game::check_balls_in_pockets()
             recenter_cue();
             message("Cue Ball pocketed", 2000);
         }
-        if (std::find(pockets.begin(), pockets.end(), 8) != pockets.end())
+
+        bool allBallsPocketed = true;
+        for (int ballId = 1; ballId <= 8; ++ballId) {
+            if (std::find(pockets.begin(), pockets.end(), ballId) == pockets.end()) {
+                allBallsPocketed = false;
+                break;
+            }
+        }
+
+        if (std::find(pockets.begin(), pockets.end(), 8) != pockets.end() and allBallsPocketed==false)
         {
             lost();
+        }
+        if (std::find(pockets.begin(), pockets.end(), 8) != pockets.end() and allBallsPocketed==true){
+            won();
         }
         pockets.clear();
     }
@@ -259,12 +297,12 @@ void Game::check_balls_in_pockets()
 
 void Game::won()
 {
-        message("Player Wins!!", 4000);
+        message("Player Wins !!", 4000);
     GameState::next_state = GameStates::Intro;
 }
 void Game::lost()
 {
-        message("Player lost!!", 4000);
+        message("Player lost !!", 4000);
     GameState::next_state = GameStates::Intro;
 }
 
